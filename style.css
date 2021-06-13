@@ -5,13 +5,15 @@ body span p{
     font-family: 'Roboto', sans-serif;
 }
 body .btn-primary {
-    background-color: #e83b3e !important;
-    border-color: #e83b3e;
-    padding: 10px 15px;
+    background-color: #ffffff !important;
+    border-color: #ffffff;
+    padding: 10px 4px;
     font-size: 16px;
     position: relative;
     z-index: 1;
     width: 119px;
+    border-radius: 35px;
+    color: #6486ef;
 }
 body .btn-primary::after{
     content: "";
@@ -24,6 +26,7 @@ body .btn-primary::after{
     border-color: #111;
     z-index: -1;
     transition: .4s;
+    border-radius: 35px;
 }
 /* start css */
 body .btn-primary:hover::after{
@@ -35,6 +38,9 @@ body .btn-primary:hover{
 .main_header .container .slider_section .container-fluid{
     max-width: 1480px;
 }
+.main_header{
+    background: #e0e0e0;
+}
 ul.our_primary_menu{}
 ul.our_primary_menu li{}
 ul.our_primary_menu li a{
@@ -44,6 +50,10 @@ ul.our_primary_menu li a{
     font-weight: 500;
 }
 .header_info{}
+.main_header img{
+    width: 70px;
+    height: auto;
+}
 .header_search {
     width: 55px;
     text-align: center;
@@ -97,21 +107,51 @@ ul.our_primary_menu li:hover ul{
     top: 190%;
 }
 /* slider section */
-.slider_section{
-    background: url(https://i.ibb.co/qdVq2TG/banner.jpg) no-repeat top center;
+/* .slider_section{
+    background: url(https://i.ibb.co/NSGpnS2/hero-image.jpg) no-repeat top center;
     background-size: cover;
-}
+} */
 .slider_content_wrap{
     height: 90vh;
     display: flex;
     align-items: center;
     position: relative;
 }
-.slider_content h6{
-    color: #e83b3e;
+.slider_img img {
+    border-radius: 50%;
+    width: 800px;
+    height: auto;
+    position: absolute;
+    top: -64px;
+    right: -177px;
+}
+.second_btn{
+    background-color: #3763eb !important;
+    border-color: #3763eb;
+    padding: 10px 4px;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+    width: 119px;
+    border-radius: 35px;
+    color: #6486ef;
+}
+
+.second_btn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #111;
+    border-color: #111;
+    z-index: -1;
+    transition: .4s;
+    border-radius: 35px;
 }
 .slider_content h1{
-    font-size: 60px;
+    font-size: 43px;
     margin-bottom: 20px;
 }
 .slider_content p{
